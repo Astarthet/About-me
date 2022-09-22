@@ -9,11 +9,11 @@
 /* Header */
 header {
   background-image: url("/resources/header.jpg");
-  background-position: center;
+  background-position: 0% 65%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 140vh;
   overflow: hidden;
 }
 
@@ -31,7 +31,7 @@ header {
   font-size: 18px;
   color: #141414;
   margin: 15px;
-  transition: all 2000ms;
+  transition: all 1000ms;
 }
 .nav ul li a:hover {
   font-size: 19px;
@@ -41,11 +41,22 @@ header {
   transition: all 1200ms;
 }
 /* titulo */
+.nombre {
+  color: #d4d4d4;
+  position: relative;
+  display: flex;
+  font-size: 25px;
+  top: 14em;
+  text-shadow: 2px 2px 2px #3b3939;
+  justify-content: center;
+  align-items: center;
+}
 .titulo {
   color: #d4d4d4;
   position: relative;
   display: flex;
-  top: 27em;
+  text-shadow: 2px 2px 2px #3b3939;
+  top: 21em;
   justify-content: center;
   align-items: center;
 }
@@ -53,29 +64,61 @@ header {
 .icon {
   position: relative;
   display: flex;
-  top: 28em;
+  top: 23em;
   justify-content: center;
   align-items: center;
   color: #d4d4d4;
+  text-shadow: 2px 2px 5px #3b3939;
 }
 .icon:hover {
   color: #eaeaea;
+  text-shadow: 2px 2px 10px #5e5d5d;
 }
 /* Body */
 body {
-  background-color: #151515;
+  background: #151515;
   font-family: "Bebas Neue", cursive;
 }
 /* About */
 .contenedor-about {
-  padding: 0 0 36em 0;
   display: flex;
-  margin: auto;
   justify-content: center;
   align-items: center;
 }
 .contenedortitulo h1 {
-  margin-top: 15px;
+  margin-top: 25px;
   text-shadow: #54544b 0.1em 0.3em 0.1em;
   color: #eaeaea;
+  font-size: 45px;
 }
+.container-info {
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 25px;
+  display: flex;
+}
+
+.container-info .img-info {
+  margin: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  border: 10px 10px 10px #d4d4d4;
+}
+.container-info .img-info img {
+  width: 350px;
+  height: 500px;
+  border-radius: 50px;
+  box-shadow: -1px 17px 68px -10px rgba(56, 56, 56, 0.63);
+  margin-right: -50px;
+}
+.container-info .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 500px;
+  border-radius: 50px;
+  background-color: rgba(135, 135, 135, 0.479);
+}
+/* Footer */
